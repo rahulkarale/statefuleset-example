@@ -1,10 +1,10 @@
-#Steps to deploy redis using StatefulSet on Minikube
+# Steps to deploy redis using StatefulSet on Minikube
 
 
-###Install Docker
+### Install Docker
 https://docs.docker.com/engine/install/
 
-###Install Minikube
+### Install Minikube
 https://minikube.sigs.k8s.io/docs/start/
 
 Run below commands to start MiniKube
@@ -18,10 +18,10 @@ For additional insight into your cluster state, minikube bundles the Kubernetes 
 minikube dashboard
 ```
 
-###Install Helm
+### Install Helm
 https://helm.sh/docs/intro/install/
 
-###Install Helm chart for redis
+### Install Helm chart for redis
 ```
 helm install redis -f ci/standalone-values.yaml ./redis
 ```
